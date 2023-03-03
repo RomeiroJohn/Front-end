@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Outfit:wght@400;700&display=swap");
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: hsl(212, 45%, 89%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section.card {
+  width: 310px;
+  flex-shrink: 0;
+}
+
+section.card .cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+}
+
+div.imageSection {
+  margin: 0.7em 0.9em 0;
+}
+
+div.imageSection img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+div.textSection {
+  margin: 0 0.9em;
+}
+
+div.textSection * {
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+}
+
+div.textSection h2 {
+  color: hsl(218, 44%, 22%);
+}
+
+div.textSection p {
+  color: hsl(220, 15%, 55%);
+}
+
+/* Footer */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 12px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
