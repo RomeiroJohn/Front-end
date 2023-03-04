@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("/images/pattern-background-desktop.svg");
+  background-repeat: repeat-x;
+  background-color: hsl(225, 100%, 94%);
+}
+
+p {
+  font-size: 16px;
+}
+
+article.card {
+  background-color: hsl(225, 100%, 98%);
+  width: 390px;
+  border-radius: 10px 10px 0 0px;
+  text-align: center;
+}
+
+article.card figure {
+  border-radius: inherit;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+}
+
+article.card figure img {
+  border-radius: inherit;
+  width: 100%;
+  height: auto;
+}
+
+article.card div.content h2 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  margin-bottom: 1em;
+}
+
+article.card div.content p {
+  color: hsl(224, 23%, 55%);
+  width: 300px;
+  margin: 1em auto;
+}
+
+article.card div.subscriptions ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2.3em;
+}
+
+article.card div.subscriptions ul div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article.card div.subscriptions ul div li {
+  color: hsl(224, 23%, 55%);
+  margin: 0 0.6em;
+}
+
+article.card div.subscriptions ul div li span {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+article.card div.subscriptions ul div li a:visited {
+  color: hsl(245, 75%, 52%);
+}
+
+article.card div.payments {
+  margin-top: 2.2em;
+}
+
+article.card div.payments > * {
+  display: block;
+}
+
+article.card div.payments div.btn-confirm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 10px;
+  box-shadow: 0px 24px 15px rgba(0, 0, 255, 0.1);
+
+  width: 300px;
+  height: 46px;
+  margin: 1em auto 1.3em;
+}
+
+article.card div.payments div.btn-confirm a {
+  font-weight: 700;
+  color: white;
+}
+
+article.card div.payments div.btn-cancel {
+  padding: 1.5em;
+  margin: 1em;
+}
+
+article.card div.payments a.btn-cancel {
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+
+/* Media Queries */
+
+@media screen and (width: 375px) {
+  body {
+    background-image: url("/images/pattern-background-mobile.svg");
+  }
+  article.card {
+    width: 300px;
+  }
+
+  article.card div.content p {
+    width: 260px;
+  }
+
+  article.card div.payments div.btn-confirm {
+    width: 260px;
+  }
+
+  article.card div.subscriptions {
+    width: 280px;
+    margin: 0 auto;
+  }
+}
+
+/* Footer */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
