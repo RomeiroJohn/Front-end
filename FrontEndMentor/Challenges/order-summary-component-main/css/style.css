@@ -60,30 +60,34 @@ article.card div.content p {
   margin: 1em auto;
 }
 
-article.card div.subscriptions ul {
+article.card div.subscriptions {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 2.3em;
 }
 
-article.card div.subscriptions ul div {
+article.card div.subscriptions div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-article.card div.subscriptions ul div li {
+article.card div.subscriptions div {
   color: hsl(224, 23%, 55%);
   margin: 0 0.6em;
 }
 
-article.card div.subscriptions ul div li span {
+article.card div.subscriptions div p {
+  margin-left: 1.5em;
+}
+
+article.card div.subscriptions div span {
   color: hsl(223, 47%, 23%);
   font-weight: 900;
 }
 
-article.card div.subscriptions ul div li a:visited {
+article.card div.subscriptions div a:visited {
   color: hsl(245, 75%, 52%);
 }
 
