@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  background-color: hsl(30, 38%, 92%);
+}
+
+main {
+  width: 650px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 10px;
+}
+
+section.image {
+  width: 350px;
+  height: auto;
+}
+
+section.image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px 0px 0px 10px;
+}
+
+section.content {
+  width: 340px;
+  padding: 2em;
+}
+
+section.content h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+
+  letter-spacing: 0.4em;
+
+  color: hsl(228, 12%, 48%);
+}
+
+section.content h1 {
+  margin-top: 1em;
+
+  font-family: "Fraunces", serif;
+  font-size: 36px;
+  line-height: 1em;
+
+  color: hsl(212, 21%, 14%);
+}
+
+section.content p {
+  margin-top: 1.2em;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.6em;
+
+  color: hsl(228, 12%, 48%);
+}
+
+section.content p.price {
+  margin-top: 0.5em;
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+
+  color: hsl(158, 36%, 37%);
+}
+
+section.content p.price span {
+  margin-left: 3em;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  vertical-align: super;
+
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+div.cart-button {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: hsl(158, 36%, 37%);
+  height: 64px;
+  border-radius: 10px;
+}
+
+div.cart-button a {
+  margin-left: 0.7em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+}
+
+/* Footer */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 505px) {
+  body {
+    display: block;
+  }
+
+  section.content {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  section.image {
+    width: 100%;
+  }
+
+  section.image img {
+    border-radius: 10px 10px 0px 0px;
+  }
+  main {
+    max-width: 400px;
+    margin: 0 auto;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+}
