@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 10px;
 
@@ -30,11 +30,6 @@ main {
   border-radius: 10px;
 }
 
-section.image {
-  width: 350px;
-  height: auto;
-}
-
 section.image img {
   display: block;
   width: 100%;
@@ -43,7 +38,7 @@ section.image img {
 }
 
 section.content {
-  width: 340px;
+  width: 500px;
   padding: 2em;
 }
 
@@ -145,7 +140,7 @@ div.cart-button a {
   }
   main {
     max-width: 400px;
-    margin: 0 auto;
+    margin: 10px auto;
     flex-direction: column;
     border-radius: 10px;
   }
