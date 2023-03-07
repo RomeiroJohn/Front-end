@@ -24,6 +24,6 @@ Note: This design was made by Frontend Mentor, if you wanna check the results he
 
 ### Results:
 
-You can access the page by <a href="https://romeirojohn.github.io/Front-end/FrontEndMentor/Challenges/qr-code-component-main/">Clicking here</a>
+You can access the page and see my result by: <a href="https://romeirojohn.github.io/Front-end/FrontEndMentor/Challenges/qr-code-component-main/">Clicking here</a>
 
-View my solution by: <a href="https://www.frontendmentor.io/solutions/responsive-page-using-flexbox-nkAWxZeNWk">Clicking here</a>
+View my solution and compare by: <a href="https://www.frontendmentor.io/solutions/responsive-page-using-flexbox-nkAWxZeNWk">Clicking here</a>
