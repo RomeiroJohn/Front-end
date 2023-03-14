@@ -16,140 +16,95 @@ body {
 
 body {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
+  gap: 10px;
   background-image: url("/images/pattern-background-desktop.svg");
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   background-color: hsl(225, 100%, 94%);
 }
 
-p {
-  font-size: 16px;
-}
-
-article.card {
-  background-color: hsl(225, 100%, 98%);
-  width: 390px;
-  border-radius: 10px 10px 0 0px;
+.card,
+.subscriptions {
   text-align: center;
 }
 
-article.card figure {
-  border-radius: inherit;
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 1.5em;
-}
-
-article.card figure img {
-  border-radius: inherit;
-  width: 100%;
-  height: auto;
-}
-
-article.card div.content h2 {
-  color: hsl(223, 47%, 23%);
-  font-weight: 900;
-  margin-bottom: 1em;
-}
-
-article.card div.content p {
-  color: hsl(224, 23%, 55%);
-  width: 300px;
-  margin: 1em auto;
-}
-
-article.card div.subscriptions {
+.subscriptions {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 2.3em;
 }
 
-article.card div.subscriptions div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.subscriptions > div:nth-child(1) {
+  display: inline-flex;
+  gap: 1rem;
 }
 
-article.card div.subscriptions div {
-  color: hsl(224, 23%, 55%);
-  margin: 0 0.6em;
+.subscriptions div a {
+  text-decoration: underline;
 }
 
-article.card div.subscriptions div p {
-  margin-left: 1.5em;
+.card {
+  width: 100%;
+  max-width: 350px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 15px;
 }
 
-article.card div.subscriptions div span {
+.card .content a {
+  display: block;
+}
+
+.content {
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+}
+
+.content h3 {
   color: hsl(223, 47%, 23%);
   font-weight: 900;
 }
 
-article.card div.subscriptions div a:visited {
-  color: hsl(245, 75%, 52%);
+.content p {
+  color: hsl(224, 23%, 55%);
 }
 
-article.card div.payments {
-  margin-top: 2.2em;
+div.subscriptions p span {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
 }
 
-article.card div.payments > * {
-  display: block;
+.image {
+  border-radius: 15px 15px 0 0;
+  margin-bottom: 20px;
 }
 
-article.card div.payments div.btn-confirm {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.image img {
+  width: 100%;
+  border-radius: inherit;
+}
 
+.content > h3,
+.content > p,
+.subscriptions,
+.content > a {
+  margin-bottom: 20px;
+}
+
+.payment-button {
   background-color: hsl(245, 75%, 52%);
-  border-radius: 10px;
-  box-shadow: 0px 24px 15px rgba(0, 0, 255, 0.1);
-
-  width: 300px;
-  height: 46px;
-  margin: 1em auto 1.3em;
-}
-
-article.card div.payments div.btn-confirm a {
-  font-weight: 700;
+  padding: 15px 0;
   color: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px hsl(224, 23%, 55%);
+  font-weight: 700;
 }
 
-article.card div.payments div.btn-cancel {
-  padding: 1.5em;
-  margin: 1em;
-}
-
-article.card div.payments a.btn-cancel {
+.cancel-order {
   color: hsl(224, 23%, 55%);
   font-weight: 700;
-}
-
-/* Media Queries */
-
-@media screen and (width: 375px) {
-  body {
-    background-image: url("/images/pattern-background-mobile.svg");
-  }
-  article.card {
-    width: 300px;
-  }
-
-  article.card div.content p {
-    width: 260px;
-  }
-
-  article.card div.payments div.btn-confirm {
-    width: 260px;
-  }
-
-  article.card div.subscriptions {
-    width: 280px;
-    margin: 0 auto;
-  }
 }
 
 /* Footer */
